@@ -43,10 +43,12 @@ export default function Home() {
             </Link>
 
             <Link
-              href="mailto:mosesesan@hotmail.com"
+              href="https://medium.com/@mosesesan"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-white"
             >
-              Email
+              Medium
             </Link>
           </div>
         </section>
@@ -92,7 +94,7 @@ export default function Home() {
           {/* Workout Tracker */}
           <div className="space-y-3">
             <h3 className="text-xl font-semibold">
-              Workout Tracker (2026)
+              AthleteOS (2026)
             </h3>
             <p className="text-gray-300">
               Offline-first React Native fitness tracking app built with
@@ -100,19 +102,19 @@ export default function Home() {
               Designed with vertical-slice architecture.
             </p>
             <Link
-              href="https://workouttracker-taupe.vercel.app/"
+              href="https://apps.apple.com/us/app/athleteos/id6757597790"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white"
             >
-              View Live Demo →
+              View on App Store →
             </Link>
           </div>
 
           {/* DropIt Geo */}
           <div className="space-y-3">
             <h3 className="text-xl font-semibold">
-              DropIt Geo
+              DropIt Geo (2025)
             </h3>
             <p className="text-gray-300">
               Location-based photo sharing app built solo with
@@ -131,7 +133,7 @@ export default function Home() {
           {/* MoBooks Swaps */}
           <div className="space-y-3">
             <h3 className="text-xl font-semibold">
-              MoBooks Swaps
+              MoBooks Swaps (2025)
             </h3>
             <p className="text-gray-300">
               Full-stack book exchange platform using React Native,
@@ -150,7 +152,7 @@ export default function Home() {
           {/* MoFlix */}
           <div className="space-y-3">
             <h3 className="text-xl font-semibold">
-              MoFlix
+              MoFlix (2024/2025)
             </h3>
             <p className="text-gray-300">
               Movie discovery platform using ReactJS, React Native,
