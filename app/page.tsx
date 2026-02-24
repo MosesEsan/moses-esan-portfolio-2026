@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CurrentYear from "../components/CurrentYear";
 
 export default function Home() {
   return (
@@ -59,28 +60,87 @@ export default function Home() {
             Professional Experience
           </h2>
 
+          {/* Software Engineer II */}
           <div className="space-y-3">
-            <h3 className="text-xl font-semibold">
-              Software Engineer II — FieldAware (GPS Insight)
-            </h3>
-            <p className="text-gray-400">May 2022 – Jan 2025 · Dublin, Ireland</p>
+            <h3 className="text-xl font-semibold">Software Engineer II</h3>
+            <p className="text-gray-400">May 2022 – Jan 2025</p>
+            <p className="text-gray-400">FieldAware by GPS Insight – Dublin, 8, Ireland</p>
+            <p className="text-gray-300">
+              FieldAware is a field management software, used by field service technicians. The software is used for scheduling and planning the jobs, recording information about the job, reporting, invoice etc.
+            </p>
             <ul className="list-disc list-inside text-gray-300 space-y-1">
-              <li>Built new features using Python (Flask) and React</li>
-              <li>Improved test coverage with Pytest & Unittest</li>
-              <li>Implemented CI/CD with CircleCI</li>
-              <li>Contributed to authentication redesign integrating FusionAuth</li>
+              <li>Developed new features and bug fixes using Python (Flask), React, and Storybook.</li>
+              <li>Actively participated in Agile sprint planning, estimations, and daily stand-ups.</li>
+              <li>Improved test coverage with Pytest and Unittest, reducing production errors.</li>
+              <li>Continuous integration and delivery: Used CircleCI for building and running tests before deploying to a development server and running regressions before deploying to production.</li>
+              <li>Notable contributions: Contributed to the redesign and replacement of the authentication services by integrating FusionAuth, enhancing security and user management.</li>
             </ul>
           </div>
 
+          {/* Software Developer */}
           <div className="space-y-3">
-            <h3 className="text-xl font-semibold">
-              Software Developer — RTÉ
-            </h3>
-            <p className="text-gray-400">Feb 2018 – Apr 2022 · Dublin, Ireland</p>
+            <h3 className="text-xl font-semibold">Software Developer</h3>
+            <p className="text-gray-400">Feb 2018 – April 2022</p>
+            <p className="text-gray-400">RTÉ – Donnybrook, Dublin 4, Ireland</p>
+            <p className="text-gray-300">
+              An Irish public service broadcaster, broadcasting programmes on television, radio and online.
+            </p>
             <ul className="list-disc list-inside text-gray-300 space-y-1">
-              <li>Developed high-availability systems using Django & React</li>
-              <li>Built real-time analytics dashboard for editorial team</li>
-              <li>Performed code reviews ensuring best practices</li>
+              <li>Developed high-availability solutions with Django and React while conducting code reviews to ensure quality and best practices.</li>
+              <li>Notable contributions: Developed a real-time analytics dashboard using AngularJS, providing the editorial team with critical insights into user interaction and article performance.</li>
+            </ul>
+          </div>
+
+          {/* Freelance Developer */}
+          <div className="space-y-3">
+            <h3 className="text-xl font-semibold">Freelance Developer</h3>
+            <p className="text-gray-400">Apr 2017 – Oct 2017</p>
+            <ul className="list-disc list-inside text-gray-300 space-y-1">
+              <li>Built Bean Lite Fitness, an iOS/Android app using React Native.</li>
+              <li>Created tutorials on React Native and Laravel, establishing a strong online presence. <a href="https://medium.com/@mosesesan" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">https://medium.com/@mosesesan</a></li>
+            </ul>
+          </div>
+
+          {/* Full-Stack Developer */}
+          <div className="space-y-3">
+            <h3 className="text-xl font-semibold">Full-Stack Developer</h3>
+            <p className="text-gray-400">Nov 2015 – Dec 2016</p>
+            <p className="text-gray-400">DBOX – NYC, USA</p>
+            <p className="text-gray-300">
+              A creative agency specializing in branding and immersive marketing for property development, architecture, and the arts.
+            </p>
+            <ul className="list-disc list-inside text-gray-300 space-y-1">
+              <li>Developed and maintained websites for multiple clients using HTML, CSS, JavaScript, and PHP, focusing on functionality, performance, and user experience enhancements.</li>
+              <li>Notable contributions: Developed a cross-platform college app for iOS and Android, enabling admins to post events and articles. Built the backend API using Laravel and PHP for seamless content management.</li>
+            </ul>
+          </div>
+
+          {/* Mobile Software Developer */}
+          <div className="space-y-3">
+            <h3 className="text-xl font-semibold">Mobile Software Developer</h3>
+            <p className="text-gray-400">17th Apr 2015 – Sep 2015</p>
+            <p className="text-gray-400">Inflight Dublin – Dublin, Ireland</p>
+            <p className="text-gray-300">
+              Specializes in the supplying of Inflight entertainment (IFE) solutions and innovative services to airlines.
+            </p>
+            <ul className="list-disc list-inside text-gray-300 space-y-1">
+              <li>Designed and developed the company’s Wireless and Preloaded IFE hybrid mobile and tablet app using Ionic and Apache Cordova within an Agile Scrum environment.</li>
+              <li>Converted Photoshop PSD designs into responsive user interfaces using HTML, CSS, and AngularJS, ensuring seamless user experience across devices.</li>
+            </ul>
+          </div>
+
+          {/* PHP Developer */}
+          <div className="space-y-3">
+            <h3 className="text-xl font-semibold">PHP Developer</h3>
+            <p className="text-gray-400">Sep 2011 – Jul 2012 & Feb 2013 – Dec 2013</p>
+            <p className="text-gray-400">Arithon – Dublin, Ireland</p>
+            <p className="text-gray-300">
+              Arithon provides recruitment software solutions for recruitment agencies across Ireland and the U.K.
+            </p>
+            <ul className="list-disc list-inside text-gray-300 space-y-1">
+              <li>Developed new features using PHP, HTML, CSS and JavaScript.</li>
+              <li>Wrote SQL scripts to retrieve data for management reports.</li>
+              <li>Liaised with clients to identify and execute data migrations using Oracle, MySQL & SQL Server.</li>
             </ul>
           </div>
         </section>
@@ -183,7 +243,7 @@ export default function Home() {
 
         {/* FOOTER */}
         <section className="pt-10 border-t border-gray-800 text-gray-500 text-sm">
-          © {new Date().getFullYear()} Moses Esan — Built with Next.js & deployed on Vercel
+          © <CurrentYear /> Moses Esan — Built with Next.js & deployed on Vercel
         </section>
 
       </div>
